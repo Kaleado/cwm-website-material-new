@@ -1,0 +1,14 @@
+.content {
+    padding-top: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+nav {
+    background-color: #6ea5ee;
+}
+
+.page-footer {
+    background-color: #6ea5ee !important;
+}
+
