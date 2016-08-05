@@ -25,10 +25,10 @@
 
   <body>
 
-    <a id="upButton" style="left: 25px; top: -20px;" class="btn btn-primary floating roundButton"><i class="fa fa-chevron-up"></i></a>
-    <a id="downButton" style="left: 25px; bottom: 25px;" class="btn btn-primary floating roundButton"><i class="fa fa-chevron-down"></i></a>
+    <a id="upButton" data-toggle="tooltip" data-placement="right" title="Previous section" style="left: 25px; top: -20px;" class="btn btn-success floating roundButton"><i class="fa fa-chevron-up"></i></a>
+    <a id="downButton" data-toggle="tooltip" data-placement="right" title="Next section" style="left: 25px; bottom: 25px;" class="btn btn-success floating roundButton"><i class="fa fa-chevron-down"></i></a>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="pageNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
 	<div class="navbar-header">
 	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -61,9 +61,9 @@
 	    <h1 class="heroHeading">Big Heading. Catchy Slogan.</h1>
 	    <h2>
 	      <ul class="fa-ul">
-		<li class="heroList"><i class="fa-li fa fa-chevron-right"></i>Your code - anywhere, anytime.</li>
-		<li class="heroList"><i class="fa-li fa fa-chevron-right"></i>Life moves pretty fast bro.</li>
-		<li class="heroList"><i class="fa-li fa fa-chevron-right"></i>Your code - nowhere, never.</li>
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - anywhere, anytime.</li>
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Life moves pretty fast bro.</li>
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - nowhere, never.</li>
 	      </ul>
 	    </h2>
 	  </div><!-- /.dotPoints -->
@@ -88,7 +88,7 @@
 		<label for="phone"><h5>Phone</h5></label>
 		<input type="text" class="form-control" id="phone">
 	      </div>
-	      <button type="submit"class="formDone btn btn-primary">Call To Action</button>
+	      <button type="submit"class="formDone btn btn-success">Call To Action</button>
 	    </form>
 	  </div><!-- /.panel -->
 	</div>
@@ -102,76 +102,79 @@
       <div class="valuePadding">
 	
 	<div class="row text-center">
-	  <h1 class="text-primary valueSectionTitle">Our Company Values</h1>
+	  <h1 class="text-success valueSectionTitle">Our Company Values</h1>
 	  <h2 class="valueSubtitle">They mean a lot to us... I guess?</h2>
 	  <hr>
 	</div>
 
-	<div class="row">
+	<div class="valueGrid">
+	  <div class="row">
+	    
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-file"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">Easy To Download</h2>
+	      <p class="valueDescription">
+		Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.
+	      </p>
+	    </div>
+
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-star"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">High Performance</h2>
+	      <p class="valueDescription">
+		Changes are contained in just two LESS or SASS files, enabling modification and ensuring forward compatibility.
+	      </p>
+	    </div>
+
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-user"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">Community Oriented</h2>
+	      <p class="valueDescription">
+		Be notified about updates by subscribing via RSS feed, email, or Tumblr.
+	      </p>
+	    </div>	  
+	  </div><!-- /.row -->
+
+	  <div class="row">
+	    
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-money"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">Cheap As Chips</h2>
+	      <p class="valueDescription">
+		Don't waste money on bad software.
+	      </p>
+	    </div>
+
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-info"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">Comprehensive Support Network</h2>
+	      <p class="valueDescription">
+		What even is LESS? Never used it. I'll stick to plain old CSS and gumption.
+	      </p>
+	    </div>
+
+	    <div class="alignRight col-xs-1">
+	      <h2 class="text-success"><i class="valueIcon fa fa-comment"></i></h2>
+	    </div>
+	    <div class="col-xs-3">
+	      <h2 class="valueTitle">Democratic Boot Fishing</h2>
+	      <p class="valueDescription">
+		Buzzwords, buzzwords, and more buzzwords.
+	      </p>
+	    </div>	  
+	  </div><!-- /.row -->
 	  
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-file"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">Easy To Download</h2>
-	    <p class="valueDescription">
-	      Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.
-	    </p>
-	  </div>
-
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-star"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">High Performance</h2>
-	    <p class="valueDescription">
-	      Changes are contained in just two LESS or SASS files, enabling modification and ensuring forward compatibility.
-	    </p>
-	  </div>
-
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-user"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">Community Oriented</h2>
-	    <p class="valueDescription">
-	      Be notified about updates by subscribing via RSS feed, email, or Tumblr.
-	    </p>
-	  </div>	  
-	</div><!-- /.row -->
-
-	<div class="row">
-	  
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-money"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">Cheap As Chips</h2>
-	    <p class="valueDescription">
-	      Don't waste money on bad software.
-	    </p>
-	  </div>
-
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-info"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">Comprehensive Support Network</h2>
-	    <p class="valueDescription">
-	      What even is LESS? Never used it. I'll stick to plain old CSS and gumption.
-	    </p>
-	  </div>
-
-	  <div class="alignRight col-xs-1">
-	    <h2 class="text-primary"><i class="valueIcon fa fa-comment"></i></h2>
-	  </div>
-	  <div class="col-xs-3">
-	    <h2 class="valueTitle">Democratic Boot Fishing</h2>
-	    <p class="valueDescription">
-	      Buzzwords, buzzwords, and more buzzwords.
-	    </p>
-	  </div>	  
-	</div><!-- /.row -->
+	</div><!-- /.valueGrid -->
 
 	<div class="row">
 	  <hr>
@@ -180,7 +183,7 @@
 	      <h3 class="valuesCaption">
 		So as you can tell, our company values are very important to us.
 	      </h3>
-	      <button class="btn btn-lg btn-primary">Call To Action</button>
+	      <button class="btn btn-lg btn-success">Call To Action</button>
 	    </div>
 	  </div>
 	</div><!-- /.row -->
@@ -188,16 +191,156 @@
       </div>
     </div><!-- /.container-fluid -->
     <!-- end second slide -->
-    
-    <!-- END MAIN CONTENT -->
-    
-    <!-- Bootstrap core JavaScript
-	 ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Our custom scripts for this page. -->
-    <script src="script.js"></script>
-  </body>
+
+    <!-- third slide -->
+    <div class="container-fluid">
+      <div class="row">
+	
+	<div id="team" class="col-xs-6 text-center teamHeading">
+	  <div class="teamOverlay">
+	    <h1>Meet Our Team</h1>
+	    <h2 class="text-success">Subheading</h2>
+	    <div class="teamSlogan">
+	      <p>
+		We have assembled a team with over twenty years of experience, dedicated to offering you the best service possible.
+	      </p>
+	    </div>
+	  </div><!-- /.teamOverlay -->
+	</div>
+
+	<div class="col-xs-6 teamDescription">
+	  <div class="row teamEntry">
+	    <div class="col-xs-12">
+	      <img class="teamImg img-responsive img-thumbnail pull-left" src="https://placehold.it/270x270">
+	      <h3 class="text-success memberName">Nick Malecki</h3>
+	      <hr>
+	      <p class="">
+		asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+	      </p>
+	    </div>
+	  </div><!-- /.row -->
+	  <div class="row teamEntry">
+	    <div class="col-xs-12">
+	      <img class="teamImg img-responsive img-thumbnail pull-left" src="https://placehold.it/270x270">
+	      <h3 class="text-success memberName">Nick Malecki</h3>
+	      <hr>
+	      <p class="">
+		asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+	      </p>
+	    </div>
+	    
+	  </div><!-- /.row -->
+	  <div class="row teamEntry">
+	    <div class="col-xs-12">
+	      <img class="teamImg img-responsive img-thumbnail pull-left" src="https://placehold.it/270x270">
+	      <h3 class="text-success memberName">Nick Malecki</h3>
+	      <hr>
+	      <p class="">
+		asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+	      </p>
+	    </div>
+	    
+	  </div><!-- /.row -->
+	</div><!-- /.container-fluid -->
+	<!-- end third slide-->
+
+	<!-- fourth slide -->
+	<div class="container-fluid">
+	  
+	  <!-- banner heading -->
+	  <div class="row">
+	    <div class="clientsBanner text-center col-xs-12">
+	      <h1>Testimonials</h1>
+	      <p>We are dedicated to our clients. Here are just a few of them.</p>
+	    </div>
+	  </div><!--/.row-->
+	  
+	  <!--clients content-->
+	  <div class="row">
+	    <div class="clientsContent">
+
+	      	      <div class="col-xs-4">
+		<div class="row">
+		  <div class=" col-xs-12">
+		    <img data-toggle="tooltip" data-placement="top" title="Since 1991" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+		  </div>
+		</div><!--/.row-->
+		<div class="row">
+		  <div class="col-xs-12">
+		    <div>
+		      <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+		      <hr>
+			<blockquote>
+			  We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+			  be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+			  dedicated to the art of businessing - and many of them have.
+			</blockquote>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+	      <div class="col-xs-4">
+		<div class="row">
+		  <div class=" col-xs-12">
+		    <img data-toggle="tooltip" data-placement="top" title="Since 2011" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+		  </div>
+		</div><!--/.row-->
+		<div class="row">
+		  <div class="col-xs-12">
+		    <div>
+		      <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+		      <hr>
+			<blockquote>
+			  We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+			  be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+			  dedicated to the art of businessing - and many of them have.
+			</blockquote>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+
+	      
+	      <div class="col-xs-4">
+		<div class="row">
+		  <div class=" col-xs-12">
+		    <img data-toggle="tooltip" data-placement="top" title="Since 2015" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+		  </div>
+		</div><!--/.row-->
+		<div class="row">
+		  <div class="col-xs-12">
+		    <div>
+		      <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+		      <hr>
+			<blockquote>
+			  We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+			  be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+			  dedicated to the art of businessing - and many of them have.
+			</blockquote>
+		    </div>
+		  </div>
+		</div>
+	      </div>
+
+	    </div>
+	  </div><!--/.row-->
+	  
+	</div>
+	<!-- end fourth slide -->
+	
+      </div>
+    </div><!-- /.row -->
+</div><!-- /.container-fluid -->
+
+<!-- END MAIN CONTENT -->
+
+<!-- Bootstrap core JavaScript
+     ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Our custom scripts for this page. -->
+<script src="script.js"></script>
+</body>
 </html>
