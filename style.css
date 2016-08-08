@@ -216,7 +216,7 @@ h1, .productHeading h2{
 }
 
 .clientsContent{
-    padding: 25px 100px;
+    padding: 50px 100px;
     height: 67vh;
     background: rgba(240, 240, 240, 1);
 }
@@ -250,4 +250,8 @@ hr {
 
 .testimonial {
     margin: 0px 50px;
+}
+
+.fadeScroll{
+    opacity: 0.0;
 }

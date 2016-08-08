@@ -51,3 +51,12 @@ $(document).ready(function(){
     });
     
 });
+
+$(".fadeScroll").scrollfire({
+    offset: 0,
+    topOffset: 150,
+    bottomOffset: 150,
+    onScroll: function(elm){
+	$(elm).animate({opacity: 1.0}, 1500);
+    }
+});
