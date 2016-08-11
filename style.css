@@ -1,25 +1,28 @@
 #hero{
     overflow:hidden;
     background-image: url('img/download.jpe');
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.dotPoints li{
-    color: white;
-    text-shadow: 0 2px 5px #000000;
+.formPanel{
+    margin-top: 30%;
+    opacity: 0;
+    position: relative;
+    left: 100%;
 }
 
 .dotPoints{
-    margin-top: 30vh;
+    margin-top: 30%;
     opacity: 0;
     position: relative;
     right: 100%;
 }
 
-.formPanel{
-    margin-top: 30vh;
+.dotPoints li{
+    color: white;
+    text-shadow: 0 2px 5px #000000;
 }
 
 .panel{
@@ -52,7 +55,7 @@ h1, .productHeading h2{
 }
 
 #products {
-    height: 100vh;
+    min-height: 100vh;
     background: #ecf0f1;
 }
 
@@ -152,19 +155,13 @@ h1, .productHeading h2{
     color:  #ffffff!important;
 }
 
-.formPanel{
-    opacity: 0;
-    position: relative;
-    left: 100%;
-}
-
 #team{
-    height:100vh;
+    min-height:100vh;
 }
 
 .teamHeading{
     padding-top: 30vh;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('img/team.jpe');
     background-size: cover;
     background-attachment: fixed;
@@ -172,16 +169,16 @@ h1, .productHeading h2{
 
 .teamDescription{
     padding: 50px 50px;
-    height: 100vh;
+    min-height: 100vh;
     background: rgba(240, 240, 240, 1.0);
 }
 
 .teamEntry{
-    height: 32vh;
+    padding: 15px;
 }
 
 .teamImg{
-    margin-right: 25px;
+    height: 100%;
 }
 
 .memberName{
@@ -206,10 +203,14 @@ h1, .productHeading h2{
     background-attachment: fixed;
 }
 
+#testimonials{
+    background: rgba(240, 240, 240, 1);
+}
+
 .clientsBanner{
     padding-top: 4vh;
     background-image: url('img/clients.jpe');
-    height: 33vh;
+    min-height: 33vh;
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -217,7 +218,7 @@ h1, .productHeading h2{
 
 .clientsContent{
     padding: 50px 100px;
-    height: 67vh;
+    min-height: 67vh;
     background: rgba(240, 240, 240, 1);
 }
 
@@ -255,3 +256,5 @@ hr {
 .fadeScroll{
     opacity: 0.0;
 }
+
+html, body { overflow-x: hidden; }
