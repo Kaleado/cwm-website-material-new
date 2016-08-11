@@ -1,5 +1,5 @@
 var currentSection = 0;
-var maxSections = 2;
+var maxSections = 3;
 
 function moveToSection(){
     var scrollTime = 500;
@@ -13,6 +13,10 @@ function moveToSection(){
     }
     if(currentSection == 2){
 	$('html, body').animate({scrollTop: $("#team").offset().top}, scrollTime);
+	return;
+    }
+    if(currentSection == 3){
+	$('html, body').animate({scrollTop: $("#testimonialsSection").offset().top}, scrollTime);
 	return;
     }
     if(currentSection > maxSections){currentSection = maxSections;}
@@ -29,13 +33,19 @@ $(document).ready(function(){
     $(window).scroll(function(){
 	var distanceScrolled = $(window).scrollTop();
 	currentSection = Math.floor(distanceScrolled / ($(window).height()-150));
-	if(distanceScrolled == 0){
+	if(currentSection  == 0){
 	    $("#upButton").animate({top: -70}, 10);
 	    $("#pageNav").fadeIn();
 	}
 	else {
 	    $("#upButton").animate({top: 25}, 10);
 	    $("#pageNav").fadeOut()
+	}
+	if(currentSection >= maxSections){
+	    $("#downButton").animate({bottom: -100}, 10);
+	}
+	else{
+	    $("#downButton").animate({bottom: 25}, 10);
 	}
     });
     
