@@ -22,129 +22,105 @@
   </head>
 
   <body>
-    <a id="upButton" data-toggle="tooltip" data-placement="right" title="Previous section" style="left: 25px; top: -20px;" class="btn btn-success floating roundButton"><i class="fa fa-chevron-up"></i></a>
-    <a id="downButton" data-toggle="tooltip" data-placement="right" title="Next section" style="left: 25px; bottom: 25px;" class="btn btn-success floating roundButton"><i class="fa fa-chevron-down"></i></a>
-
     <nav id="pageNav" class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-	    <span class="sr-only">Toggle navigation</span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	  </button>
-	  <a class="navbar-brand" href="#">Project name</a>
-	</div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Code With Me</a>
+        </div>
 
-	<div id="navbar" class="pull-right collapse navbar-collapse">
-	  <ul class="nav navbar-nav">
-	    <li class="active"><a href="#">Home</a></li>
-	    <li class="hvr-sweep-to-top" ><a href="#values">Values</a></li>
-	    <li class="hvr-sweep-to-top" ><a href="#team">Team</a></li>
-	    <li class="hvr-sweep-to-top" ><a href="#testimonialsSection">Testimonials</a></li>
-	  </ul>
-	</div><!--/.nav-collapse -->
-
+        <div id="navbar" class="pull-right collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#values">Values</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#team">Team</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#testimonialsSection">Testimonials</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
     <div id="hero" class="container-fluid">
-      <!-- first slide -->
       <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-xs-12">
+          <div class="dotPoints">
+            <h1 class="heroHeading">Big Heading. Catchy Slogan.</h1>
+            <h2><ul class="fa-ul">
+              <li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - anywhere, anytime.</li>
+              <li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Life moves pretty fast.</li>
+              <li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - nowhere, never.</li>
+            </ul></h2>
+          </div>
+        </div>
 
-	<div class="col-md-5 col-md-offset-1 col-xs-12">
-	  <div class="dotPoints">
-	    <h1 class="heroHeading">Big Heading. Catchy Slogan.</h1>
-	    <h2>
-	      <ul class="fa-ul">
-		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - anywhere, anytime.</li>
-		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Life moves pretty fast bro.</li>
-		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - nowhere, never.</li>
-	      </ul>
-	    </h2>
-	  </div><!-- /.dotPoints -->
-	</div>
-
-	<div class="col-md-5 col-xs-12">
-	  <div class="formPanel panel">
-	    <h2 class="text-center">
-	      Stay Informed
-	    </h2>
-	    <hr>
-	    <form>
-	      <div class="form-group">
-		<label for="name"><h5>Full Name</h5></label>
-		<input type="text" class="form-control" id="name">
-	      </div>
-	      <div class="form-group">
-		<label for="email"><h5>Email</h5></label>
-		<input type="text" class="form-control" id="email">
-	      </div>
-	      <div class="form-group">
-		<label for="phone"><h5>Phone</h5></label>
-		<input type="text" class="form-control" id="phone">
-	      </div>
-	      <button type="submit"class="formDone btn btn-success">Call To Action</button>
-	    </form>
-	  </div><!-- /.panel -->
-	</div>
-
-      </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
+        <div class="col-md-5 col-xs-12">
+          <div class="formPanel panel">
+            <h2 class="text-center">Stay Informed</h2>
+            <hr>
+            <form>
+              <div class="form-group">
+                <h5><label for="name">Full Name</label></h5>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <h5><label for="email">Email</label></h5>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <h5><label for="phone">Phone</label></h5>
+                <input type="text" class="form-control" id="phone">
+              </div>
+              <button type="submit" class="formDone btn btn-success">Call To Action</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end first slide -->
 
-    <!-- second slide -->
     <div id="values">
       <div class="valuePadding">
+      	<div class="row text-center">
+          <h1 class="text-success valueSectionTitle">Our Company Values</h1>
+          <h2 class="valueSubtitle">They mean a lot to us... I guess?</h2>
+          <hr>
+        </div>
+        <div class="valueGrid">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-file"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">Easy To Download</h2>
+                <p class="valueDescription">Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
+              </div>
+            </div>
 
-	<div class="row text-center">
-	  <h1 class="text-success valueSectionTitle">Our Company Values</h1>
-	  <h2 class="valueSubtitle">They mean a lot to us... I guess?</h2>
-	  <hr>
-	</div>
-
-	<div class="valueGrid">
-	  <div class="row">
-
-	    <div class="col-xs-12 col-md-4">
-	      <div class="alignRight col-xs-3">
-		<h2 class="text-success"><i class="valueIcon fa fa-file"></i></h2>
-	      </div>
-	      <div class="col-xs-9">
-		<h2 class="valueTitle">Easy To Download</h2>
-		<p class="valueDescription">
-		  Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.
-		</p>
-	      </div>
-	    </div>
-
-	    <div class="col-xs-12 col-md-4">
-	      <div class="alignRight col-xs-3">
-		<h2 class="text-success"><i class="valueIcon fa fa-star"></i></h2>
-	      </div>
-	      <div class="col-xs-9">
-		<h2 class="valueTitle">High Performance</h2>
-		<p class="valueDescription">
-		  Changes are contained in just two LESS or SASS files, enabling modification and ensuring forward compatibility.
-		</p>
-	      </div>
-	    </div>
-
-	    <div class="col-xs-12 col-md-4">
-	      <div class="alignRight col-xs-3">
-		<h2 class="text-success"><i class="valueIcon fa fa-user"></i></h2>
-	      </div>
-	      <div class="col-xs-9">
-		<h2 class="valueTitle">Community Oriented</h2>
-		<p class="valueDescription">
-		  Be notified about updates by subscribing via RSS feed, email, or Tumblr.
-		</p>
-	      </div>
-	    </div>
-
-	  </div><!-- /.row -->
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-star"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">High Performance</h2>
+                <p class="valueDescription">Changes are contained in just two LESS or SASS files, enabling modification and ensuring forward compatibility.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-user"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">Community Oriented</h2>
+                <p class="valueDescription">Be notified about updates by subscribing via RSS feed, email, or Tumblr.</p>
+              </div>
+            </div>
+          </div><!-- /.row -->
 
 	  <div class="row">
 
@@ -358,12 +334,9 @@
       </div>
     </div><!-- /.row -->
 </div><!-- /.container-fluid -->
-
-<!-- END MAIN CONTENT -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="jquery.scrollfire.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.scrollfire.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
