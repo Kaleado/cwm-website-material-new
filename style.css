@@ -1,9 +1,8 @@
 #hero{
     overflow:hidden;
-    background-image: url('img/download.jpe');
-    min-height: 100vh;
+    background: url('img/download.jpe') fixed;
     background-size: cover;
-    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .formPanel{
@@ -21,7 +20,7 @@
 }
 
 .dotPoints li{
-    color: white;
+    color: #fff;
     text-shadow: 0 2px 5px #000000;
 }
 
@@ -29,8 +28,9 @@
     padding: 25px;
 }
 
-h1, .productHeading h2{
-    color: white;
+h1,
+.productHeading h2 {
+    color: #fff;
     text-shadow: 0 2px 5px #000000;
 }
 
@@ -40,18 +40,6 @@ h1, .productHeading h2{
 .floating {
     z-index: 99;
     position: fixed;
-}
-
-.roundButton {
-    border-radius: 50%;
-    box-shadow: 0 2px 5px #000000;
-    width: 60px;
-    height: 60px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 4.5em;
-    padding: 0;
-    display: inline-block;
 }
 
 #products {
@@ -72,13 +60,7 @@ h1, .productHeading h2{
     vertical-align: middle;
 }
 
-.leftCarouselButton{
-    background-image: none!important;
-}
-
-.rightCarouselButton{
-    background-image: none!important;
-}
+.leftCarouselButton, .rightCarouselButton { background-image: none !important; }
 
 .carousel-control{
     text-shadow: 0 2px 5px #000000;
@@ -100,26 +82,18 @@ h1, .productHeading h2{
     margin-top: 30vh;
 }
 
-.valueIcon{
-    margin-right: 0px;
-    margin-bottom: 30px;
-}
+.valueIcon { margin: auto 0 30px auto; }
 
-.alignRight{
+.alignRight {
     text-align: right;
 }
 
 .valueDescription{
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 20px;
 }
 
-.valueTitle{
-    font-size: xx-large;
-    text-transform: uppercase;
-}
-
-.valueSubtitle{
+.valueTitle, .valueSubtitle {
     font-size: xx-large;
     text-transform: uppercase;
 }
@@ -132,39 +106,32 @@ h1, .productHeading h2{
     margin-bottom: 0.8em;
 }
 
-.heroHeading{
-}
-
 .valuesSummary{
     text-align: center;
     padding-bottom: 25px;
 }
 
-.valuesCaption{
-}
-
 .active > a{
-    color: #4caf50!important;
-    background:  #ffffff!important;
+    color: #4caf50 !important;
+    background:  #fff !important;
 }
 
 .hvr-sweep-to-top:before{
-    background:  #4caf50!important;
+    background:  #4caf50 !important;
 }
 .hvr-sweep-to-top a:hover{
-    color:  #ffffff!important;
+    color:  #fff !important;
 }
 
-#team{
-    min-height:100vh;
+#team {
+    min-height: 100vh;
 }
 
 .teamHeading{
     padding-top: 30vh;
     min-height: 100vh;
-    background-image: url('img/team.jpe');
+    background: url('img/team.jpe') fixed;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .teamDescription{
@@ -189,31 +156,27 @@ h1, .productHeading h2{
 }
 
 .teamSlogan{
-    color:white;
+    color: #fff;
     width: 30vh;
     align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
 }
 
 .valueGrid{
     padding: 25px 0px;
-    background: rgba(240, 240, 240, 1);
-    background-size: cover;
-    background-attachment: fixed;
+    background: rgb(240, 240, 240);
 }
 
 #testimonials{
-    background: rgba(240, 240, 240, 1);
+    background: rgb(240, 240, 240);
 }
 
 .clientsBanner{
     padding-top: 4vh;
-    background-image: url('img/clients.jpe');
+    background: url('img/clients.jpe') fixed;
     min-height: 33vh;
     background-size: cover;
-    background-attachment: fixed;
-    color: white;
+    color: #fff;
 }
 
 .clientsContent{
@@ -249,12 +212,8 @@ hr {
     margin-top: 0px;
 }
 
-.testimonial {
-    margin: 0px 50px;
-}
+.testimonial { margin: 0px 50px; }
 
-.fadeScroll{
-    opacity: 0.0;
-}
+.fadeScroll{ opacity: 0; }
 
 html, body { overflow-x: hidden; }
