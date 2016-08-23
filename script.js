@@ -25,44 +25,6 @@ function moveToSection() {
 
 $(document).ready(function() {
     
-    //For YouTube player.
-    $("#youtube-player").hide();
-    
-    var youtube_open = false;
-    var youtube_video_id = "zPlErSZbNE8";
-
-    $("#youtube-img").attr("src", thumbnail('big'));
-
-    function thumbnail(size) {
-        if (size === 'small') {
-            return 'http://img.youtube.com/vi/' + youtube_video_id + '/2.jpg';
-        }
-        return 'http://img.youtube.com/vi/' + youtube_video_id + '/0.jpg';
-    };
-    
-    $("#youtube-btn").click(function(event) {
-        event.preventDefault();
-        
-        if(youtube_open == false) {
-            addYoutube();
-            $("#youtube-player").show("slow");
-            youtube_open = true;
-        } else {
-            $("#youtube-player").hide("slow", removeYoutube);
-            youtube_open = false;
-        }
-        
-    }); 
-
-    function addYoutube() {
-        document.getElementById('youtube-player').innerHTML = '<iframe width="420" height="315" src="https://www.youtube.com/embed/'+ youtube_video_id +'?autoplay=1" frameborder="0" allowfullscreen></iframe>';
-    }
-    
-    function removeYoutube() {
-        document.getElementById('youtube-player').innerHTML = "";
-    }
-    
-    //End YouTube
     $('[data-toggle="tooltip"]').tooltip();
     //Show the main signup panel and slogan upon opening the page.
     $(".formPanel").animate({left: 0, opacity: 1.0}, 1000);
@@ -85,8 +47,65 @@ $(document).ready(function() {
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000);
-  });
+    });
+    
+    
+    //For YouTube player.
+    $('.youtube-player').hide();
+    
+    var youtube_open = false;
+    
+    $('.youtube-btn').each(function(i, obj) {
+        var video_id = this.id;
+        
+        $(obj).find('.youtube-img').attr("src", thumbnail('big', video_id));
+        
+        $(obj).click(function(event) {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $('#mediaSection').offset().top
+            }, 1000);
+              
+            if(youtube_open == false) {
+                addYoutube(video_id);
+                $('.youtube-player').show("slow");
+            } else {
+                if($('.youtube-player').id != video_id){
+                    $('.youtube-player').hide("slow", removeAndStart);
+                    function removeAndStart() {
+                        $('.youtube-player').html("");
+                        addYoutube(video_id);
+                        $('.youtube-player').show("slow");
+                    }
+                } else {
+                    $('.youtube-player').hide("slow", removeYoutube);
+                }
+            }
+        }); 
+        
+    });
+    
+    function thumbnail(size, video_id) {
+        if (size === 'small') {
+            return 'http://img.youtube.com/vi/' + video_id + '/2.jpg';
+        }
+        return 'http://img.youtube.com/vi/' + video_id + '/0.jpg';
+    };
 
+    function addYoutube(video_id) {
+        youtube_open = true;
+        $('.youtube-player').html('<iframe width="420" height="315" src="https://www.youtube.com/embed/'+ video_id +'?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+        $('.youtube-player').attr('id', video_id);
+    }
+    
+    function removeYoutube() {
+        youtube_open = false;
+        $('.youtube-player').html("");
+        $('.youtube-player').removeAttr('id');
+    }
+    
+    //End YouTube
 });
 
 $(".fadeScroll").scrollfire({
