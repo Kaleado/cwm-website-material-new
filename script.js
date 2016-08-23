@@ -24,6 +24,45 @@ function moveToSection() {
 }
 
 $(document).ready(function() {
+    
+    //For YouTube player.
+    $("#youtube-player").hide();
+    
+    var youtube_open = false;
+    var youtube_video_id = "zPlErSZbNE8";
+
+    $("#youtube-img").attr("src", thumbnail('big'));
+
+    function thumbnail(size) {
+        if (size === 'small') {
+            return 'http://img.youtube.com/vi/' + youtube_video_id + '/2.jpg';
+        }
+        return 'http://img.youtube.com/vi/' + youtube_video_id + '/0.jpg';
+    };
+    
+    $("#youtube-btn").click(function(event) {
+        event.preventDefault();
+        
+        if(youtube_open == false) {
+            addYoutube();
+            $("#youtube-player").show("slow");
+            youtube_open = true;
+        } else {
+            $("#youtube-player").hide("slow", removeYoutube);
+            youtube_open = false;
+        }
+        
+    }); 
+
+    function addYoutube() {
+        document.getElementById('youtube-player').innerHTML = '<iframe width="420" height="315" src="https://www.youtube.com/embed/'+ youtube_video_id +'?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+    }
+    
+    function removeYoutube() {
+        document.getElementById('youtube-player').innerHTML = "";
+    }
+    
+    //End YouTube
     $('[data-toggle="tooltip"]').tooltip();
     //Show the main signup panel and slogan upon opening the page.
     $(".formPanel").animate({left: 0, opacity: 1.0}, 1000);
