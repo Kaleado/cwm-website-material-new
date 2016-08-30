@@ -71,7 +71,7 @@ h1,
 }
 
 #values{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .valuePadding{
@@ -145,7 +145,7 @@ h1,
 }
 
 .teamImg{
-    height: 100%;
+    height: auto;
 }
 
 .memberName{
