@@ -3,13 +3,10 @@
 - In this section, we will be covering:
   - Tooltips.
   - More transitions.
-  - Responsive images.
-  - Centering images in Bootstrap.
-  - ScrollFire.
 - In this section, our page will be segmented into two halves: a top banner, and
   a bottom formation of three columns, corresponding to three testimonials.
 - Each testimonial will consist of an image, accompanied by a block of text.
-- We will even add a transition to each testimonial!
+- We will also add our fade-in transition to each testimonial.
 - Let's start with the banner.
 
 ## The Testimonials Banner
@@ -148,60 +145,8 @@ produced in the same way.
   ```
 
   - One small and possibly confusing detail is what we have done with the `<hr>`
-  in our CSS: we have added `border-top 1px solid #cccccc`: this is to alter the
+  in our CSS: we have added `border-top: 1px solid #cccccc`: this is to alter the
   colour of the horizontal rule.
   - Other properties are simply used to alter spacing.
   - You can duplicate this testimonial block three times to fill in your
   testimonials section!
-
-## Putting It Together and Adding Effects
-
-- Adding ScrollFire:
-  - ScrollFire is a jQuery library that allows the page to react to the user
-  scrolling past elements.
-  - Download ScrollFire from https://plugins.jquery.com/scrollfire/
-  - Extract the archive, and copy `jquery.scrollfire.min.js` to the same directory
-  that you `index.html` is in.
-  - Add this to the _end_ of your `index.html`: `<script src="jquery.scrollfire.js"></script>`.
-- Using ScrollFire to add a transition to a div:
-  - We can now use the ScrollFire library to attach effects to our elements.
-  - In this example, we will be attaching a fade-in effect to elements with the
-  `.fadeScroll` class.
-  - *script.js*:
-
-  ```
-  $(".fadeScroll").scrollfire({
-    offset: 0,
-    topOffset: 150,
-    bottomOffset: 150,
-    onScroll: function(elm){ $(elm).animate({opacity: 1.0}, 1500); }
-  });
-  ```
-
-  - Explanation:
-    - The `$(".fadeScroll").scrollfire()` function sets up the ScrollFire
-    library for use on elements with the `.fadeScroll` class.
-    - We pass this function an object with the properties:
-      - `offset: 150`: this adjusts the amount of 'leeway' between seeing the element
-      on screen at the top and/or bottom, and triggering the ScrollFire event.
-      - `topOffset: 0`: as above, but only for the top of the screen.
-      - `bottomOffset: 0`: as above, but only for the bottom of the screen.
-      - `onScroll: function(elm){ $(elm).animate({opacity: 1.0}, 1500); }`: this
-      allows us to attach a function to run when the element is scrolled past. Within
-      this function, we also use the jQuery `animate` function - this function
-      is used to add animations to elements - in particular, we use this function
-      to animate the element's `opacity` property to 1.0 (i.e. full opacity), over
-      a period of 1500ms.
-    - Doing all of this adds the necessary behaviour to the elements, but our
-    transition doesn't seem to work - we need to adjust our `style.css` to
-    set the opacity of the `.fadeScroll` elements to 0.
-  - *style.css*
-
-  ```
-  .fadeScroll{
-    opacity: 0;
-  }
-  ```
-
-  - This class can now be used to make elements fade in from transparency when
-  they are scrolled past.

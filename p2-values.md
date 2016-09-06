@@ -75,6 +75,7 @@
   - We have a `.row` for each segment of values
   - Inside the top row we will use three `.col-md-4` divs to add three values like so:
 
+  ```
 	<!-- This is the top row of our values -->
 	<div class='col-md-4'>
 		<!--First value goes here-->
@@ -85,6 +86,7 @@
 	<div class='col-md-4'>
 		<!--Third value goes here-->
 	</div>
+  ```
 
   - Remember that each row is twelve columns - if we wanted four values per column, we could use `.col-md-3`.
 - *style.css*

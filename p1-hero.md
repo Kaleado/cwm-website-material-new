@@ -45,7 +45,7 @@
     - `margin-top: 30%`: this will add a space of height 30% of the viewport size above
       the div, so that it appears centered when we open the page.
   - Add a rule for h1, as follows:
-  
+
 	  ```
 	  h1{
 		color: white;
@@ -69,7 +69,7 @@
 	- `.formPanel`: will be used to alter the behaviour of our panel.
   - Inside of our .panel, add a title for your form (use <h2> if you like),
     and add a structure similar to this:
-	
+
 	```
 	<form>
 		<div class="form-group">
@@ -102,15 +102,15 @@
   - We can fix this by adding this to our style:
 
 	```
-	.panel{
-		padding: 25px;
-	}
+  .panel{
+      padding: 25px;
+  }
 	```
 
 	- `padding: 25px`: adds 25px of space around the _inside_ of the element.
   - We also notice that the form is pushed all the way to the top of the screen.
     We can move it down by adding:
-	
+
   ```
   .formPanel{
 		margin-top: 30%;
