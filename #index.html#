@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Code With Me</title>
+    <meta name="author" content="Code With Me">
+    <meta name="description" content="Code With Me material website for Aeona workshop.">
+    <meta name="robots" content="index, follow">
+    <meta name="generator" content="Atom">
+    <link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+  </head>
+
+  <body>
+
+    <nav id="pageNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Code With Me</a>
+        </div>
+
+        <div id="navbar" class="pull-right collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#values">Values</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#team">Team</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#mediaSection">Projects</a></li>
+            <li class="hvr-sweep-to-top" ><a href="#testimonialsSection">Testimonials</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="blur"></div>
+
+    <div id="hero" class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-xs-12">
+          <div class="dotPoints">
+            <h1 class="heroHeading">Big Heading. Catchy Slogan.</h1>
+            <h2><ul class="fa-ul">
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - anywhere, anytime.</li>
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Life moves pretty fast.</li>
+		<li class="heroList"><i class="text-success fa-li fa fa-chevron-right"></i>Your code - nowhere, never.</li>
+            </ul></h2>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-xs-12">
+          <div class="formPanel panel">
+            <h2 class="text-center">Stay Informed</h2>
+            <hr>
+            <form action="#" method="post">
+              <div class="form-group">
+                <h5><label for="name">Full Name</label></h5>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <h5><label for="email">Email</label></h5>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <h5><label for="phone">Phone</label></h5>
+                <input type="text" class="form-control" id="phone">
+              </div>
+              <button type="submit" class="formDone btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="values">
+      <div class="valuePadding">
+      	<div class="row text-center">
+          <h1 class="text-success valueSectionTitle">Our Company Values</h1>
+          <h2 class="valueSubtitle">They mean a lot to us... I guess?</h2>
+        </div>
+        <div class="valueGrid">
+          <div class="row">
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-file"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">Easy To Download</h2>
+                <p class="valueDescription">Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-star"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">High Performance</h2>
+                <p class="valueDescription">Changes are contained in just two LESS or SASS files, enabling modification and ensuring forward compatibility.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="alignRight col-xs-3">
+                <h2 class="text-success"><i class="valueIcon fa fa-user"></i></h2>
+              </div>
+              <div class="col-xs-9">
+                <h2 class="valueTitle">Community Oriented</h2>
+                <p class="valueDescription">Be notified about updates by subscribing via RSS feed, email, or Tumblr.</p>
+              </div>
+            </div>
+          </div><!-- /.row -->
+      	  <div class="row">
+
+      	    <div class="col-xs-12 col-md-4">
+      	      <div class="alignRight col-xs-3">
+            	<h2 class="text-success"><i class="valueIcon fa fa-money"></i></h2>
+              </div>
+      	      <div class="col-xs-9">
+            	<h2 class="valueTitle">Cheap As Chips</h2>
+            	<p class="valueDescription">
+            	  Don't waste money on bad software.
+            	</p>
+      	      </div>
+      	    </div>
+
+      	    <div class="col-xs-12 col-md-4">
+      	      <div class="alignRight col-xs-3">
+            	<h2 class="text-success"><i class="valueIcon fa fa-info"></i></h2>
+      	      </div>
+      	      <div class="col-xs-9">
+            	<h2 class="valueTitle">Comprehensive Support Network</h2>
+            	<p class="valueDescription">
+            	  What even is LESS? Never used it. I'll stick to plain old CSS and gumption.
+            	</p>
+      	      </div>
+      	    </div>
+
+      	    <div class="col-xs-12 col-md-4">
+      	      <div class="alignRight col-xs-3">
+            	<h2 class="text-success"><i class="valueIcon fa fa-comment"></i></h2>
+      	      </div>
+      	      <div class="col-xs-9">
+            	<h2 class="valueTitle">Democratic Boot Fishing</h2>
+            	<p class="valueDescription">
+            	  Buzzwords, buzzwords, and more buzzwords.
+            	</p>
+      	      </div>
+      	    </div>
+      	  </div><!-- /.row -->
+      	</div><!-- /.valueGrid -->
+      	<div class="row">
+          <hr>
+      	  <div class="col-xs-12">
+      	    <div class="valuesSummary">
+      	      <h3 class="valuesCaption">
+      		So as you can tell, our company values are very important to us.
+      	      </h3>
+      	      <button class="btn btn-lg btn-success">Call To Action</button>
+      	    </div>
+      	  </div>
+      	</div><!-- /.row -->
+      </div>
+    </div>
+
+    <div id="team" class="col-xs-12 col-md-6 text-center teamHeading">
+      <div class="teamOverlay">
+  	<h1>Meet Our Team</h1>
+  	<h2 class="text-success">Subheading</h2>
+  	<div class="teamSlogan">
+  	  <p>
+  	    We have assembled a team with over twenty years of experience, dedicated to offering you the best service possible.
+  	  </p>
+  	</div>
+      </div><!-- /.teamOverlay -->
+    </div>
+
+    <div class="col-xs-12 col-md-6 teamDescription">
+      <div class="row teamEntry fadeScroll">
+  	<div class="hidden-md col-xs-4">
+  	  <img class="teamImg img-responsive img-thumbnail" src="https://placehold.it/270x270">
+  	</div>
+  	<div class="col-md-12 col-xs-8 col-lg-8">
+  	  <h3 class="text-success memberName">Nick Malecki</h3>
+  	  <hr>
+  	  <p class="">
+  	    asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+  	  </p>
+  	</div>
+      </div><!-- /.row -->
+      <div class="row teamEntry fadeScroll">
+  	<div class="hidden-md col-xs-4">
+  	  <img class="teamImg img-responsive img-thumbnail" src="https://placehold.it/270x270">
+  	</div>
+  	<div class="col-md-12 col-xs-8 col-lg-8">
+  	  <h3 class="text-success memberName">Nick Malecki</h3>
+  	  <hr>
+  	  <p class=""> asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+  	  </p>
+  	</div>
+      </div><!-- /.row -->
+
+      <div class="row teamEntry fadeScroll">
+  	<div class="hidden-md col-xs-4">
+  	  <img class="teamImg img-responsive img-thumbnail center" src="https://placehold.it/270x270">
+  	</div>
+  	<div class="col-md-12 col-xs-8 col-lg-8">
+  	  <h3 class="text-success memberName">Nick Malecki</h3>
+  	  <hr>
+  	  <p class="">
+  	    asd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbehrb jjthgnbt tybjyjtbasd nf  eth ertgwerfwef we fwefwef wefwefwefbe
+  	  </p>
+  	</div>
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+
+    <div id="media">
+
+      <!-- banner heading -->
+      <div class="row">
+  	<div id="mediaSection" class="clientsBanner text-center col-xs-12">
+  	  <h1>My Projects</h1>
+  	  <div align="center" class="panel text-center row youtube-box youtube-player" id="">
+          </div>
+          <div class="panel grey space text-center row">
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a href="http://codewithme.com.au" target="_blank">
+		<img class="img-rounded width-100 hvr-grow" src="img/codewithme.png">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a class="youtube-btn" href="#" target="_blank" id="OI2hGfOelMY">
+		<img class="img-rounded width-100 hvr-grow crop youtube-img">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a href="http://github.com" target="_blank">
+		<img class="img-rounded width-100 hvr-grow" src="http://placehold.it/300x200">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a class="youtube-btn" href="#" target="_blank" id="3VvTRMD8Wyo">
+		<img class="img-rounded width-100 hvr-grow crop youtube-img">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a href="http://github.com" target="_blank">
+		<img class="img-rounded width-100 hvr-grow" src="http://placehold.it/300x200">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a href="http://github.com" target="_blank">
+		<img class="img-rounded width-100 hvr-grow" src="http://placehold.it/300x200">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a class="youtube-btn" href="#" target="_blank" id="9PB30JUOncw">
+		<img class="img-rounded width-100 hvr-grow crop youtube-img">
+              </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 padding-fix">
+              <a class="youtube-btn" href="#" target="_blank" id="tmPm5iYOklg">
+		<img class="img-rounded width-100 hvr-grow crop youtube-img">
+              </a>
+            </div>
+          </div>
+  	</div>
+      </div><!--/.row-->
+    </div>
+
+    <div id="testimonials">
+
+      <!-- banner heading -->
+      <div class="row">
+  	<div id="testimonialsSection" class="clientsBanner text-center col-xs-12">
+  	  <h1>Testimonials</h1>
+  	  <p>We are dedicated to our clients. Here are just a few of them.</p>
+  	</div>
+      </div><!--/.row-->
+
+      <!--clients content-->
+      <div class="row">
+  	<div class="clientsContent">
+
+  	  <!-- first column -->
+  	  <div class="col-xs-12 col-md-4 fadeScroll">
+
+  	    <div class="row">
+  	      <div class=" col-xs-12">
+  		<img data-toggle="tooltip" data-placement="top" title="Since 1991" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+  	      </div>
+  	    </div><!--/.row-->
+
+  	    <div class="row">
+  	      <div class="col-xs-12">
+  		<div class="testimonial">
+  		  <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+  		  <hr>
+  		  <blockquote>
+  		    We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+  		    be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+  		    dedicated to the art of businessing - and many of them have.
+  		  </blockquote>
+		</div>
+  	      </div>
+  	    </div>
+  	  </div>
+  	  <!-- second column -->
+  	  <div class="col-xs-12 col-md-4 fadeScroll">
+
+  	    <div class="row">
+  	      <div class=" col-xs-12">
+  		<img data-toggle="tooltip" data-placement="top" title="Since 2011" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+  	      </div>
+  	    </div><!--/.row-->
+
+  	    <div class="row">
+  	      <div class="col-xs-12">
+  		<div class="testimonial">
+  		  <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+  		  <hr>
+  		  <blockquote>
+  		    We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+  		    be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+  		    dedicated to the art of businessing - and many of them have.
+  		  </blockquote>
+  		</div>
+  	      </div>
+  	    </div><!--/.row-->
+
+  	  </div>
+
+  	  <!-- third column -->
+  	  <div class="col-xs-12 col-md-4 fadeScroll">
+
+  	    <div class="row">
+  	      <div class=" col-xs-12">
+  		<img data-toggle="tooltip" data-placement="top" title="Since 2015" class="center-block img-responsive img-circle clientImage" src="https://placehold.it/270x270">
+  	      </div>
+  	    </div><!--/.row-->
+
+  	    <div class="row">
+  	      <div class="col-xs-12">
+  		<div class="testimonial">
+  		  <h3 class="text-center testimonialHeading">Commonwealth Bank</h3>
+  		  <hr>
+  		  <blockquote>
+  		    We were really damn satisfied with Business Name's performance. Like REALLY satisfied - how could one business
+  		    be so damn good at businessing? It's like the employees at Business Name had spent their entire lives
+  		    dedicated to the art of businessing - and many of them have.
+  		  </blockquote>
+  		</div>
+  	      </div>
+  	    </div><!--/.row-->
+
+  	  </div>
+
+  	</div>
+      </div><!--/.row-->
+
+    </div>
+
+    <div id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="text-center valueSectionTitle text-success">Thumbnail Gallery</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 1" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 2" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 3" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 4" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 5" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 6" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 7" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 8" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 9" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 10" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 11" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#"data-image-id="" data-toggle="modal" data-title="Image 12" data-image="http://placehold.it/1200x900" data-target="#image-gallery">
+              <img class="img-responsive" src="http://placehold.it/1200x900">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="image-gallery-title"></h4>
+            </div>
+
+            <div class="modal-body">
+              <img id="image-gallery-image" class="img-responsive" src="">
+            </div>
+
+            <div class="modal-footer">
+
+              <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+              </div>
+
+              <div class="col-md-2 col-md-offset-8">
+                <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.scrollfire.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

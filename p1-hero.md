@@ -8,13 +8,15 @@
 - *style.css*:
   - Add this:
 
-	`#hero{
+	```
+	#hero{
 		overflow:hidden;
 		background-image: url('img/download.jpe');
 		min-height: 100vh;
 		background-size: cover;
 		background-attachment: fixed;
-	}`
+	}
+	```
 
 	- `overflow: hidden`: this will prevent the entire image from showing in the div.
   - `background-image: url('img/myImage.jpe')`: this will set the background of the
@@ -43,11 +45,13 @@
     - `margin-top: 30%`: this will add a space of height 30% of the viewport size above
       the div, so that it appears centered when we open the page.
   - Add a rule for h1, as follows:
-
-	  `h1{
+  
+	  ```
+	  h1{
 		color: white;
 		text-shadow: 0 2px 5px #000000;
-	  }`
+	  }
+	  ```
 
     - `color: white:` we know what this does.
 	- `text-shadow: 0 2px 5px #000000`: this adds a shadow to the text:
@@ -65,15 +69,20 @@
 	- `.formPanel`: will be used to alter the behaviour of our panel.
   - Inside of our .panel, add a title for your form (use <h2> if you like),
     and add a structure similar to this:
-
-  `<form>
+	
+	```
+	<form>
 		<div class="form-group">
+			<!-- Put your form information here! -->
 		</div>
 		<div class="form-group">
+			<!-- Put your form information here! -->
 		</div>
 		<div class="form-group">
+			<!-- Put your form information here! -->
 		</div>
-	</form>`
+	</form>
+	```
 
   - Each .form-group wraps around an <input> and provides styling details.
 	- Add an <input> into each .form-group. Input tags look like this:
@@ -92,16 +101,20 @@
   - Notice that without any CSS styling, the panel border is very close to the form
   - We can fix this by adding this to our style:
 
-	`.panel{
+	```
+	.panel{
 		padding: 25px;
-	}`
+	}
+	```
 
 	- `padding: 25px`: adds 25px of space around the _inside_ of the element.
   - We also notice that the form is pushed all the way to the top of the screen.
     We can move it down by adding:
-
-  `.formPanel{
+	
+  ```
+  .formPanel{
 		margin-top: 30%;
-  }`
+  }
+  ```
 
   - This is probably self-explanatory.
