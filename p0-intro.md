@@ -14,7 +14,8 @@ free to experiment with other themes!
   - Mouse over the dropdown and click `bootstrap.css` - this file defines the
   theme.
   - Save that file to a new directory - this directory will contain your
-  website.
+  website. Save it in a subdirectory called `css` - this will be used to store
+  all of the website's CSS.
 
 ## Setting up our index.html
 
@@ -33,7 +34,8 @@ free to experiment with other themes!
       <meta name="author" content="Your Name Here">
       <meta name="description" content="Code With Me material website for Aeona workshop.">
       <meta name="robots" content="index, follow">
-      <link rel="stylesheet" href="bootstrap.css" media="all">
+      <link rel="stylesheet" href="css/bootstrap.css" media="all">
+	  <link rel="stylesheet" href="css/style.css" media="all">
     </head>
 
     <body>
@@ -42,7 +44,7 @@ free to experiment with other themes!
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="jquery.scrollfire.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="script.js"></script>
     </body>
   </html>
@@ -67,7 +69,7 @@ free to experiment with other themes!
 ## Creating the Navbar
 
 - *index.html*:
-  - Add this:
+  - Add this inside the `<body>`:
 
   ```
   <nav id="pageNav" class="navbar navbar-default navbar-fixed-top">
@@ -123,7 +125,7 @@ free to experiment with other themes!
 - *index.html*:
   - We will create the traditional 'hamburger button', allowing the navbar to
   collapse on smaller displays.
-  - We do this by adding:
+  - We do this by adding above our `#navbar`, inside our `.container-fluid`:
 
   ```
   <div class="navbar-header">

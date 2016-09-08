@@ -189,12 +189,16 @@ hr {
 }
 
 .testimonial {
-  margin: 0px 50px;
+  margin: 0px 0px;
 }
 
-.fadeScroll{ opacity: 0; }
+.fadeScroll{
+  opacity: 0;
+}
 
-html, body { overflow-x: hidden; }
+html, body {
+  overflow-x: hidden;
+}
 
 .grey {
     background: #ecf0f1;

@@ -2,19 +2,28 @@
 
 ## Creating the Heading
 - *index.html*:
-  - Create a new div with the ID 'values' - this will wrap around our entire values section.
+  - Create a new div underneath our `hero` container with the ID `values` - this will wrap around our
+  entire values section.
   - Within our `#values` div, we will create a div with `.valuePadding` - this will be used to
 	add a border to our values, so they don't hug the sides of the window.
   - Within _this_ div, add this:
 
 	```
 	<div class="row text-center">
-		<h1 class="valueSectionTitle">Our Company Values</h1>
+		<h1 class="text-primary valueSectionTitle">Our Company Values</h1>
 		<h2 class="valueSubtitle">They mean a lot to us.</h2>
 	</div>
 	```
 
   - `.text-center`: centers the heading on the page.
+  - `.text-primary`: causes the text to be displayed in blue - we can also use...
+  - ...`.text-success` for green.
+  - ...`.text-warning` for orange.
+  - ...`.text-danger` for red.
+  - ...`.text-success` for green.
+  - ...`.text-muted` for grey.
+  - ...`.text-info` for teal.
+  - ...CSS for any other colour we like.
   - We also use `.row` to ensure that the heading will span the entire window, so that we can add content below it.
 - *style.css*:
   - Add this:
@@ -35,7 +44,7 @@
 	.valueTitle, .valueSubtitle {
 	    font-size: xx-large;
 	    text-transform: uppercase;
-    }
+  }
 	```
 
   - `text-shadow: none!important`: we have seen the `text-shadow` property before, but what about `!important`?
@@ -77,18 +86,20 @@
 
   ```
 	<!-- This is the top row of our values -->
-	<div class='col-md-4'>
+	<div class='col-xs-12 col-md-4'>
 		<!--First value goes here-->
 	</div>
-	<div class='col-md-4'>
+	<div class='col-xs-12 col-md-4'>
 		<!--Second value goes here-->
 	</div>
-	<div class='col-md-4'>
+	<div class='col-xs-12 col-md-4'>
 		<!--Third value goes here-->
 	</div>
   ```
 
   - Remember that each row is twelve columns - if we wanted four values per column, we could use `.col-md-3`.
+  - Notice that we use `.col-xs-12` _and_ `.col-md-4` simultaneously: this is to ensure that the section
+  looks correct on smaller displays.
 - *style.css*
   - We want our `.valueGrid` div to contrast slightly with the white background of the page.
   - We also want our `.valueGrid` to be slightly padded against the previous section, so the text doesn't hug against the bottom of the hero banner.
@@ -107,20 +118,23 @@
 
 - *index.html*:
   - Each value will consist of a Font Awesome icon in one column, and some text in another, larger column.
+  - To install Font Awesome:
+    1. Download font-awesome from `fontawesome.io`.
+    2. Move font-awesome.css to your website folder, in the `css` directory.
   - Might want to draw a diagram and explain why the markup works the way that it does.
   - Remember that we can nest columns!
   - Each value will look like this:
 
 	```
-	<div class="col-xs-12 col-md-4">
-		<div class="alignRight col-xs-3">
-			<h2 class="text-success"><i class="valueIcon fa fa-file"></i></h2>
-		</div>
-		<div class="col-xs-9">
-			<h2 class="valueTitle">Easy To Download</h2>
-			<p class="valueDescription">Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
-		</div>
-	</div>
+  <div class="col-xs-12 col-md-4">
+  	<div class="alignRight col-xs-3">
+  		<h2 class="text-primary"><i class="fa fa-file"></i></h2>
+  	</div>
+  	<div class="col-xs-9">
+  		<h2 class="valueTitle">Easy To Download</h2>
+  		<p class="valueDescription">Simply download a CSS file and replace the one in Bootstrap. No messing around with hex values.</p>
+  	</div>
+  </div>
 	```
 
 	- Notice we have used _two_ column classes on the divs - this is so the content fits properly on smaller screens: the `.col-xs-12` is for

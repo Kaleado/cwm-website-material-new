@@ -11,6 +11,9 @@
 
 ## The Testimonials Banner
 
+- Once again, we will need a large image, named `testimonials.jpg`, saved in
+CSS.
+
 - *index.html*:
   - We first create our wrapping `<div id="testimonials">`.
   - Our banner heading is quite simple:
@@ -35,7 +38,7 @@
   ```
   .clientsBanner{
     padding-top: 4vh;
-    background: url('img/clients.jpe') fixed;
+    background: url('testimonials.jpg') fixed;
     min-height: 33vh;
     background-size: cover;
     color: #fff;
@@ -57,7 +60,7 @@ produced in the same way.
 
   ```
   <div class="row clientsContent">
-    <!-- our testimonials will go here! -->
+    <!-- Our testimonials will go here! -->
   </div>
   ```
 
@@ -138,10 +141,6 @@ produced in the same way.
       border-top: 1px solid #cccccc;
       margin-top: 0px;
   }
-
-  .testimonial {
-    margin: 0px 50px;
-  }  
   ```
 
   - One small and possibly confusing detail is what we have done with the `<hr>`

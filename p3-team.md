@@ -4,26 +4,28 @@
   - ScrollFire.
   - Responsive images.
   - Centering images in Bootstrap.
-- This section will be segmented into two halves: a large banner heading to the left,
-and a set of team profiles to the right. When we resize the page, the banner will
-relocate above the team member profiles. The images will also dynamically resize to fit 
-the window size as well.
+- This section will be segmented into two halves: a large banner heading to the
+left, and a set of team profiles to the right. When we resize the page, the
+banner will relocate above the team member profiles. The images will also
+dynamically resize to fit the window size as well.
+- Download another large image for our banner - name it `team.jpg`, and save it
+in `css`.
 
 ## The Team Banner
 
 - *index.html*:
   - As usual, we add our `<div>` to wrap our entire section in.
-  
+
   ```
   <div id="team">
 	  <!-- Our team section will be going here. -->
   </div>
   ```
-  
+
   - We also add a half screen-spanning column inside our div. Also note that we use
   `.col-xs-12` to ensure that the banner heading will stretch to fill the screen on
   smaller displays:
-  
+
   ```
   <div class="col-xs-12 col-md-6 text-center teamHeading">
 	  <h1>Meet Our Team</h1>
@@ -33,39 +35,39 @@ the window size as well.
 	  </div>
   </div>
   ```
-  
+
   - `teamHeading`: this is added so that we can ensure that the banner heading will
   fill the left side of the screen, as well as to add a background image (see below).
 
 - *style.css*:
   - We want our team section to span an entire screen height, so we add:
-  
+
   ```
   #team {
       min-height: 100vh;
   }
   ```
-  
+
   - Note that we have used `#team` rather than `.team` - this is so that we apply
   the rule to elements with the ID 'team', rather than those with the class 'team'.
   - We also use the following CSS:
-  
+
   ```
   .teamHeading{
-      padding-top: 30vh;
+    padding-top: 30vh;
 	  min-height: 100vh;
-	  background: url('img/team.jpe') fixed;
+	  background: url('team.jpg') fixed;
 	  background-size: cover;
   }
   ```
-  
+
   - `padding-top`: we use this property to push the entire heading section down one
   third of the screen height.
   - `min-height`: this property sets the _minimum_ height of the parent element (in this
   case, the div). This means that the section is still free to expand beyond 100vh.
   - The other two rules are similar to what we did in the hero section.
   - We also add:
-  
+
   ```
   .teamSlogan{
 	  color: #fff;
@@ -74,19 +76,19 @@ the window size as well.
 	  margin: auto;
   }
   ```
-  
+
   - Should be largely self-explanatory.
-  
+
 ## The Team Descriptions
 - *index.html*:
-  - We make another column to fit our team descriptions:
-  
+  - We make another column next to the first one to fit our team descriptions:
+
   ```
   <div class="col-xs-12 col-md-6 teamDescription">
 	  <!-- Our team descriptions will go here. -->
   </div>
   ```
-  
+
   - Note once again that we are using a column spanning 6 columns on mid-size displays,
   and a column spanning a full 12 columns on extra small displays.
   - `teamDescription` will be used to add padding, adjust the height of the div, and
@@ -94,7 +96,7 @@ the window size as well.
   - We will show you how to build one team member profile - they may be copied multiple
   times for multiple team members.
   - The code for one team member profile:
-  
+
   ```
   <div class="row teamEntry">
 	  <div class="hidden-md col-xs-4">
@@ -104,13 +106,13 @@ the window size as well.
 		<h3 class="text-primary memberName">Your Name</h3>
 		<hr>
 		<p>Your profile here!</p>
-	</div>
-  </div><!-- /.row -->
+   </div>
+  </div>
   ```
-  
+
   - `.img-responsive`: causes an image to flexibly change size when the div it resides
   in changes size (this usually happens when the window is resized).
-  - `.img-thumbnail`: adds a white border around the image. Similar classes include (might 
+  - `.img-thumbnail`: adds a white border around the image. Similar classes include (might
   want to demonstrate these):
 	  - `.img-circle`: displays a circular border around the image.
 	  - `.img-rounded`: maintains the aspect ratio of the image, whilst rounding the edges.
@@ -126,7 +128,7 @@ the window size as well.
   - We will use `memberName` to adjust the team member name.
 - *style.css*:
   - We add our definition for the `memberName` rule:
-  
+
   ```
   .memberName{
 	  font-size: xx-large;
@@ -135,10 +137,10 @@ the window size as well.
 	  margin-bottom: 25px;
   }
   ```
-  
+
   - `line-height`: used to adjust the space between each line of text of the `h3` - setting this
   to zero ensure that no gap is left above and below the `h3`.
-  
+
 ## ScrollFire
 
 - Adding ScrollFire:
@@ -191,4 +193,3 @@ the window size as well.
 
   - This class can now be used to make elements fade in from transparency when
   they are scrolled past - try adding them to each `teamEntry`.
-
